@@ -1,0 +1,28 @@
+<div class="pull-right">
+  <button class="btn btn-primary" ui-sref="product.new">Create new product</button>
+</div>
+</br>
+</br>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th width="10%">Id</th>
+      <th width="40%">Name</th>
+      <th width="30%">Price</th>
+      <th width="20%">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="product in vm.products">
+      <th scope="row" ng-bind="product.id"></th>
+      <td ng-bind="product.name">
+      </td>
+      <td ng-bind="product.price | currency:'$':0">
+      </td>
+      <td>
+        <button class="btn btn-primary btn-sm" ui-sref="product.edit({id: product.id})">Edit</button>
+        <button class="btn btn-danger btn-sm" ng-click="vm.onRemoveProduct (product)">Remove</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
