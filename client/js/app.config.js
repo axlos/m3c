@@ -1,4 +1,4 @@
-export function config ($logProvider, $httpProvider, RestangularProvider) {
+export function config ($logProvider, $httpProvider) {
   'ngInject';
   // Enable log
   $logProvider.debugEnabled(true);
@@ -6,5 +6,4 @@ export function config ($logProvider, $httpProvider, RestangularProvider) {
   // CORS configuration
   $httpProvider.defaults.withCredentials = false;
   $httpProvider.defaults.useXDomain = true;
-  RestangularProvider.setBaseUrl('http://localhost:8000/api');
 }
