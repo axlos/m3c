@@ -7,9 +7,20 @@
 
     <title>M3C</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/app.css">
+    <link rel="stylesheet" type="text/css" href="./dist/app.css">
   </head>
   <body ng-app="app" ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>
+          <span>Umbrella Corporation</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-raised" aria-label="Learn More">
+          Learn More
+        </md-button>
+      </div>
+    </md-toolbar>
     <div ui-view layout="column" layout-fill></div>
     <script type="text/javascript" src="./dist/bundle.js"></script>
   </body>

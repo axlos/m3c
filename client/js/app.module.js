@@ -1,5 +1,6 @@
-// import 'index.scss!';
-import '../css/main.scss';
+// import '../../node_modules/angular-material/angular-material.scss';
+import 'angular-material/angular-material.scss';
+import '../css/app.scss';
 
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
